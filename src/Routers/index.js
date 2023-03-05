@@ -2,17 +2,26 @@ import { lazy } from "react";
 import { Route } from "react-router-dom";
 const routers = [{
     path: "",
-    element:lazy(()=>import('./../pages/Home')),
-    // nested: [
-    //     {
-    //         path: "",
-    //         element: "",
-    //     }
-    // ],
+    element: lazy(() => import('./../pages/Home/')),
+    nested: [
+        {
+            path: "",
+            element: lazy(() => import('./../pages/Home/HomeMovie')),
+        },
+        {
+            path: "/listmovie",
+            element: lazy(() => import('./../pages/Home/listMoviePage')),
+        }
+        ,
+        {
+            path: "/log-in",
+            element: lazy(() => import('./../pages/Home/AuthPage')),
+        }
+    ],
 },
 {
     path: "admin",
-    element:lazy(()=>import('./../pages/Admin')),
+    element: lazy(() => import('./../pages/Admin')),
     // nested: [
     //     {
     //         path: "",

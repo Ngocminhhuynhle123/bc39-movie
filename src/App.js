@@ -3,7 +3,6 @@ import { Suspense } from 'react'
 import './App.css';
 import { Routes, BrowserRouter } from 'react-router-dom'
 import { renderRouter } from './Routers';
-console.log(renderRouter());
 function App() {
   return (
     <Suspense>

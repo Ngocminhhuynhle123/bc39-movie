@@ -1,0 +1,127 @@
+#menu_Movie {
+    background: url(https://www.bhdstar.vn/wp-content/themes/bhd/assets/images/movie-details-bg.jpg) top left no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+
+
+.tabs {
+    text-align: center;
+}
+
+.title_tad {
+    border: none;
+    color: var(--color-text);
+    padding: 0;
+    background: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 28px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+    transition: all ease .5s;
+    margin-right: 1.3rem;
+}
+
+.title_tad::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--bg-btn);
+    transform: scale(0);
+    transition: all ease .5s;
+
+}
+
+.title_tad:hover {
+    color: var(--bg-btn);
+}
+
+.title_tad:hover::before {
+    transform: scale(1);
+
+}
+
+.title_tad.active {
+    color: var(--bg-btn);
+
+}
+.title_tad.active::before {
+    transform: scale(1);
+}
+
+.card_movie {
+    width: 255px;
+    transition: ease-in-out .3s;
+    overflow: hidden;
+}
+
+.card_movie .frame_img {
+    overflow: hidden;
+}
+
+.card_movie .img_movie {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 37/55;
+    transform: scale(1);
+    transition: ease-in-out .3s;
+    object-fit: cover;
+}
+
+.card_movie .img_movie:hover {
+    transform: scale(1.1);
+
+}
+
+.title_movie {
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 30px;
+    width: 100%;
+    margin-top: .5rem;
+    font-size: 1.6rem;
+    transition: all ease .5s;
+}
+.title_movie:hover{
+    color: var(--bg-btn);
+}
+
+.btn_buyStick {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    background-color: var(--bg-btn);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: var(--size-border-radius);
+    display: block;
+    text-align: center;
+    line-height: 45px;
+    color: var(--color-text);
+    font-weight: 600;
+    border: none;
+    transition: all ease .5s;
+}
+.btn_buyStick:hover{
+    color: var(--bg-btn);
+    background-color: var(--color-text);
+}
+.btn_buyStick svg path{
+    transition: all ease .5s;
+}
+.btn_buyStick:hover svg path{
+    color: var(--bg-btn) !important;
+}
+dl, ol, ul{
+    margin: 0 !important;
+}
