@@ -3,7 +3,7 @@
       "baseUrl": "./src",
       "paths": {
         "Utils/*":["./src/Utils/*"],
-        "src/*":["./src/*"]
+        "img/*":["./src/img/*"]
       }
     }
   }

@@ -1,4 +1,4 @@
 import { combineReducers } from "redux";
-
-
-export const rootReducer = combineReducers({  });
+import { BannerMovieReducer } from "pages/Home/HomeMovie/Carousel/duck/reducer";
+import { ListMovieReducer } from "pages/Home/HomeMovie/listMovie/duck/reducer";
+export const rootReducer = combineReducers({ BannerMovieReducer, ListMovieReducer});
