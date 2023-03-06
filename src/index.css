@@ -4,8 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--color-text);
-
 }
 
 html,
@@ -25,7 +23,7 @@ a:hover {
     --bg-header: #111;
     --bg-btn: #54ab35;
     --size-border-radius: 5px;
-   
+    --color-text:#fff;
     --color-select-movie: #d4dd29;
 }
 

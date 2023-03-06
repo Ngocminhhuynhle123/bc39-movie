@@ -24,10 +24,6 @@ const routers = [{
     element: lazy(() => import("./../pages/Admin")),
     nested: [
       {
-        path: "",
-        element: lazy(() => import("./../pages/Admin/AdminTemplate/DashboardPage")),
-      },
-      {
         path: "add-user",
         element: lazy(() => import("./../pages/Admin/AdminTemplate/AddUserPage")),
       },
@@ -40,7 +36,7 @@ const routers = [{
         element: lazy(() => import("./../pages/Admin/AdminTemplate/AuthPage")),
       },
       {
-        path:"edit",
+        path:"",
         element: lazy(() => import("./../pages/Admin/AdminTemplate/EditMoviePage")),
     },
     ],
