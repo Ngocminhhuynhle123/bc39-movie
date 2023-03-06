@@ -16,6 +16,10 @@ const routers = [{
         {
             path: "/log-in",
             element: lazy(() => import('./../pages/Home/AuthPage')),
+        },
+        {
+            path: 'detail/:id',
+            element: lazy(() => import('./../pages/Home/Detail')),
         }
     ],
 },

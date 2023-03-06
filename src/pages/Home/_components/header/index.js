@@ -4,7 +4,6 @@ import { FaUser } from 'react-icons/fa'
 import { NavLink, Link } from 'react-router-dom'
 function Header() {
  const [render, setRender] = useState(false)
-    console.log(localStorage.getItem("user"));
     const handleLogIn = () => {
         if (!localStorage.getItem("user")) {
             return <NavLink className='btn btn-success btn-login' to={'/log-in'} >Đăng nhập</NavLink>
