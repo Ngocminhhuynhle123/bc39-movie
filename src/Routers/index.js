@@ -21,14 +21,32 @@ const routers = [{
 },
 {
     path: "admin",
-    element: lazy(() => import('./../pages/Admin')),
-    // nested: [
-    //     {
-    //         path: "",
-    //         element: "",
-    //     }
-    // ],
-}]
+    element: lazy(() => import("./../pages/Admin")),
+    nested: [
+      {
+        path: "",
+        element: lazy(() => import("./../pages/Admin/AdminTemplate/DashboardPage")),
+      },
+      {
+        path: "add-user",
+        element: lazy(() => import("./../pages/Admin/AdminTemplate/AddUserPage")),
+      },
+      {
+        path: "add-movie",
+        element: lazy(() => import("./../pages/Admin/AdminTemplate/AddMoviePage")),
+      },
+      {
+        path: "login",
+        element: lazy(() => import("./../pages/Admin/AdminTemplate/AuthPage")),
+      },
+      {
+        path:"edit",
+        element: lazy(() => import("./../pages/Admin/AdminTemplate/EditMoviePage")),
+    },
+    ],
+  },
+
+]
 
 export const renderRouter = () => {
     return routers.map((router) => {

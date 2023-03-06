@@ -16,7 +16,7 @@ function ListMovie() {
     const [NowShowing, setNowShowing] = useState(true);
     const [ComingSoon, setComingSoon] = useState(false);
     const handleTabClickNowShowing = (e) => {
-        setCurrentTab(e.target.name);
+        setCurrentTab(e.target.name); 
         setNowShowing(true)
         setComingSoon(false);
     }
