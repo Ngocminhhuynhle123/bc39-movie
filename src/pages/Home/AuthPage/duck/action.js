@@ -1,4 +1,5 @@
 import { auth_Movie_Repest, auth_Movie_Success, auth_Movie_fail } from "./types";
+import { setlogINSuccess } from "pages/Home/_components/header/duck/action";
 import api from "Utils/apiUtils";
 export const fetAuth = (user, navigate) => {
     return (dispatch) => {
@@ -8,6 +9,7 @@ export const fetAuth = (user, navigate) => {
                 dispatch(actAuth_Movie_Success(retult.data.content));
                 localStorage.setItem("user", JSON.stringify(retult.data.content))
                 navigate("", { replace: true });
+                dispatch(setlogINSuccess())
 
             })
             .catch((error) => {

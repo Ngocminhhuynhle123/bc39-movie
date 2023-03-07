@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { fetAuth } from './duck/action';
-import { useSelector, useDispatch } from 'react-redux'
-import { useNavigate,Navigate,Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { useNavigate,Navigate } from 'react-router-dom'
 import './style.css'
 export default function AuthPage() {
     
@@ -28,8 +28,8 @@ export default function AuthPage() {
     return (
         <div className='logIN'>
             <div className='container'>
-                <div className='row'>
-                    <div className='col-md-6 mx-aotu'>
+                <div>
+                    <div className='col-md-6 mx-auto mt-5'>
                         <h3>Login</h3>
                         <form onSubmit={handleSubmit}>
                             <div className="form-group">
