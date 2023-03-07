@@ -38,7 +38,7 @@ export default function AuthPage() {
                             </div>
                             <div className="form-group">
                                 <label>Mật khẩu</label>
-                                <input type="text" name="matKhau" onChange={handelOnchange} className="form-control" />
+                                <input type="password" name="matKhau" onChange={handelOnchange} className="form-control" />
                             </div>
                             <button type="submit" className='btn btn-success'>
                                 Đăng nhập
