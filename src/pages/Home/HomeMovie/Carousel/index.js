@@ -12,7 +12,7 @@ function SampleNextArrow(props) {
     <div
       className={className}
       onClick={onClick}
-    ><FaChevronRight style={{ ...style, fontSize: "30px" }} /></div>
+    ><FaChevronRight style={{ ...style }} /></div>
   );
 }
 function SamplePrevArrow(props) {

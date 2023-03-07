@@ -19,6 +19,13 @@
 #carousel .slick-prev svg,
 #carousel .slick-next svg {
     font-size: 40px !important;
+    color: #fff;
+    opacity: .5;
+    transition: all ease .2s;
+}
+#carousel .slick-prev:hover svg,
+#carousel .slick-next:hover svg {
+    opacity: 1;
 }
 
 #carousel .slick-prev {
